@@ -1,12 +1,8 @@
 const mongoose = require('mongoose');
 
 const characterSchema = new mongoose.Schema({
-  Name: String,
+  Title: String,
   Type: String,
-  Age: Number,
-  gender: String,
-  Occupation: String,
-  Hobbie: String
 });
 
 
