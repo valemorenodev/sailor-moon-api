@@ -51,4 +51,4 @@ Start the server
 
 ## Author
 
-#### 💫Daniela Castillo [@dcstll](https://github.com/dcstll)
+#### 💫Vale Moreno
