@@ -5,7 +5,7 @@ const mongoose = require("mongoose")
 const port = 3030;
 const app = express();
 
-const Routes = require("./routes/routes");
+const Routes = require("./Routes/routes");
 
 const connectionOptions = {
   useNewUrlParser: true,
@@ -23,7 +23,7 @@ const corsOption = {
 
 app.use(cors(corsOption));
 
-const mongoURL = "mongodb+srv://valemorenodev:michipantera1@cluster0.rqzi6mu.mongodb.net/test"
+const mongoURL = "mongodb+srv://michigordoelegante:superpantera@cluster0.rqzi6mu.mongodb.net/sailorMoon"
 
 mongoose.set("strictQuery", false);
 mongoose.connect(mongoURL, connectionOptions).then(() => console.log("Conexion exitosa")).catch((err) => console.error(err));

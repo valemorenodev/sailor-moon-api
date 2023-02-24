@@ -7,4 +7,4 @@ const characterSchema = new mongoose.Schema({
 });
 
 
-module.exports = mongoose.model("Characters", characterSchema)
+module.exports = mongoose.model("sailorMoonData", characterSchema)
