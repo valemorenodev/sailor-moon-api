@@ -10,7 +10,7 @@ Sailor moon is an Application Programming Interface(API) design to provide you w
 Clone the project
 
 ```bash
-  git clone https://github.com/dcstll/apisanrio
+  git clone https://github.com/valemorenodev/sailor-moon-api
 ```
 
 Go to the project directory
