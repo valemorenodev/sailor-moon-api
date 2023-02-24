@@ -2,12 +2,10 @@ const cors = require('cors');
 const express = require("express");
 const mongoose = require("mongoose")
 
-require("dotenv").config()
-
-
+const port = 3030;
 const app = express();
 
-const Routes = require("./src/Routes/routes");
+const Routes = require("./routes/routes");
 
 const connectionOptions = {
   useNewUrlParser: true,
@@ -25,11 +23,13 @@ const corsOption = {
 
 app.use(cors(corsOption));
 
+const mongoURL = "mongodb+srv://valemorenodev:michipantera1@cluster0.rqzi6mu.mongodb.net/test"
+
 mongoose.set("strictQuery", false);
-mongoose.connect(process.env.mongoURL, connectionOptions).then(() => console.log("Conexion exitosa")).catch((err) => console.error(err));
+mongoose.connect(mongoURL, connectionOptions).then(() => console.log("Conexion exitosa")).catch((err) => console.error(err));
 
 app.use("/App", Routes);
 
-app.listen(process.env.port, () => {
+app.listen(port, () => {
   console.log("Conexión exitosa al puerto ");
 })

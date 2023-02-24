@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
 
 const characterSchema = new mongoose.Schema({
-  Title: String,
-  Type: String,
+  title: String,
+  description: String,
+  indenty: String
 });
 
 
