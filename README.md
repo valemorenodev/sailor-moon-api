@@ -16,7 +16,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd apisanrio
+  cd sailor-moon-api
 ```
 
 Install dependencies
