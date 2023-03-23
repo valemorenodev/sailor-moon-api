@@ -1,4 +1,4 @@
-const Character = require("../models/SailorModel")
+const Character = require("../Models/SailorModel")
 
 exports.getCharacters = async (req, res) => {
   try {
