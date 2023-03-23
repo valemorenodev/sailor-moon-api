@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const RetsiController = require("../controllers/SailorControllers")
+const RetsiController = require("../Controllers/SailorControllers")
 
 router
   .get("/Characters", RetsiController.getCharacters)
