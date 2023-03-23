@@ -23,7 +23,7 @@ const corsOption = {
 
 app.use(cors(corsOption));
 
-const mongoURL = "mongodb+srv://michigordoelegante:superpantera@cluster0.rqzi6mu.mongodb.net/sailorMoon"
+const mongoURL = "mongo db+srv://michigordoelegante:superpantera@cluster0.rqzi6mu.mongodb.net/sailorMoon"
 
 mongoose.set("strictQuery", false);
 mongoose.connect(mongoURL, connectionOptions).then(() => console.log("Conexion exitosa")).catch((err) => console.error(err));

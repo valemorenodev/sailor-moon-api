@@ -3,8 +3,8 @@ const mongoose = require('mongoose');
 const characterSchema = new mongoose.Schema({
   title: String,
   description: String,
-  indenty: String
+  identity: String
 });
 
 
-module.exports = mongoose.model("sailorMoonData", characterSchema)
+module.exports = mongoose.model("sailormoondatas", characterSchema)

@@ -1,6 +1,5 @@
 const Character = require("../models/SailorModel")
 
-
 exports.getCharacters = async (req, res) => {
   try {
     const result = await Character.find();
