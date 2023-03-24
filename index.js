@@ -4,6 +4,7 @@ const mongoose = require("mongoose")
 
 const port = 3030;
 const app = express();
+app.use("/App", Routes);
 
 const Routes = require("./Routes/routes");
 
