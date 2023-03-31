@@ -26,10 +26,11 @@ app.use(cors(corsOption));
 const mongoURL = "mongodb+srv://michigordoelegante:superpantera@cluster0.rqzi6mu.mongodb.net/sailorMoon"
 
 mongoose.set("strictQuery", false);
-mongoose.connect(mongoURL, connectionOptions).then(() => console.log("Conexion exitosa")).catch((err) => console.error(err));
+mongoose.connect(mongoURL, connectionOptions).then(() => console.log("***---Successful connection to the data base---***")).catch((err) => console.error(err));
 
 app.use("/App", Routes);
 
 app.listen(port, () => {
-  console.log("Conexión exitosa al puerto ");
+  console.log(" ***---Successful connection to the port---***");
+  console.log("http://localhost:3030/App");
 })
